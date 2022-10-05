@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "sourceMap": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": ["dom", "esnext", "es2021.intl", "webworker"],
+    "isolatedModules": true,
+    "downlevelIteration": true,
+    "types": [
+      // allows webpack module.hot
+      "webpack-env"
+    ],
+    "incremental": true
+  },
+  "include": [
+    "./ClientApp"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
